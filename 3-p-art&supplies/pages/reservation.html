@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Art Journey Trip Booking</title>
+  </head>
+  <body>
+    <nav>
+      <center>
+        <table width="1200" cellpadding="0" cellspacing="30">
+          <tr>
+            <th height="50" width="50" cellpadding="0" cellspacing="0">
+              <img src="../assets/general/logo.jpg" width="80" />
+            </th>
+            <th><a href="../index.html">Home</a></th>
+            <th><a href="./canvas.html">Canvas</a></th>
+            <th><a href="./brushes.html">Brushes</a></th>
+            <th><a href="./paints.html">Paints</a></th>
+            <th><a href="./about.html">About</a></th>
+            <th><a href="./reservation.html">Reservation</a></th>
+          </tr>
+        </table>
+      </center>
+    </nav>
+
+    <br /><br />
+    <h1 align="center">Book Your Art Journey Trip</h1>
+    <br />
+    <form action="https://httpbin.org/post" method="post" align="center">
+      <div class="field-wrapper" id="first-name-field">
+        <label for="first-name"><strong>First-Name</strong></label>
+        <input
+          type="text"
+          id="first-name"
+          name="first_name"
+          placeholder="Please enter first-name"
+        />
+      </div>
+      <br />
+      <div class="field-wrapper" id="last-name-field">
+        <lable for="last-name"><strong>Last-Name</strong></lable>
+        <input
+          type="text"
+          id="last-name"
+          name="last_name"
+          placeholder="Please onter last-name"
+        />
+      </div>
+      <br />
+      <div class="field-wrapper" id="email-field">
+        <label for="email"><strong>Email</strong></label>
+        <input
+          type="email"
+          id="email"
+          name="user_name"
+          placeholder="Please enter email"
+        />
+      </div>
+      <br />
+      <div class="field-wrapper" id="phone-number-field">
+        <label for="phone-number"><strong>Phone-Number</strong></label>
+        <input
+          type="phone-number"
+          id="phone-number"
+          name="phone_number"
+          placeholder="Please enter phone"
+        />
+      </div>
+      <br />
+      <div class="field-wrapper" id="destination-field">
+        <label for="destination"
+          ><strong>Choose your destination</strong></label
+        >
+        <select name="destination-field" id="destination">
+          <option value="">Choose your destination</option>
+          <optipn value="france">France</optipn>
+          <option value="italy">Italy</option>
+          <option value="Germany">Germany</option>
+        </select>
+      </div>
+      <br />
+      <div class="field-wrapper" id="start-date-field">
+        <label for="start-date"
+          ><strong>Start Date of Art Journey</strong></label
+        >
+        <input
+          type="date"
+          id="start-date"
+          name="start_date"
+          placeholder="Start-Date"
+        />
+      </div>
+      <br />
+      <div class="field-wrapper" id="end-date-field">
+        <lable for="end-date"><strong>End Date of Art Journey</strong></lable>
+        <input
+          type="date"
+          id="end-date"
+          name="end_date"
+          placeholder="End-Date"
+        />
+      </div>
+      <br />
+      <div class="field-wrapper" id="accommodations-field">
+        <label for="hotel"
+          ><strong
+            >Optional Accommodations (select if applicable):</strong
+          ></label
+        ><br />
+
+        <label for="hotel">Hotel</label>
+        <input type="checkbox" id="hotel" name="accommodations" value="Hotel" />
+
+        <label for="rental-car">Rental Car</label>
+        <input
+          type="checkbox"
+          id="rental-car"
+          name="accommodations"
+          value="Rental-car"
+        />
+
+        <label for="art-tour">Guided Art Tour</label>
+        <input
+          type="checkbox"
+          id="art-tour"
+          name="accommodations"
+          value="art-tour"
+        />
+        <lable for="workshop">Art Workshop</lable>
+        <input
+          type="checkbox"
+          name="accommodations"
+          id="workshop"
+          value="workshop"
+        />
+      </div>
+      <br />
+
+      <div class="field-wrapper" id="package-field">
+        <label for="basic"
+          ><strong>Select Your Art Journey Package:</strong></label
+        ><br />
+
+        <label for="basic">Basic Package (Includes Guided Tours)</label>
+        <input
+          type="radio"
+          id="basic"
+          name="package"
+          value="Basic"
+          required
+        /><br />
+
+        <label for="premium"
+          >Premium Package (Includes Workshops + Exclusive Gallery
+          Access)</label
+        >
+        <input
+          type="radio"
+          id="premium"
+          name="package"
+          value="Premium"
+          required
+        />
+      </div>
+      <br />
+      <div class="field-wrapper" id="comment-field">
+        <label for="comments"
+          ><strong>Additional Comments or Requests:</strong></label
+        ><br />
+        <textarea
+          id="comments"
+          name="comments"
+          rows="6"
+          cols="32"
+          placeholder="Any special requests or questions:"
+        ></textarea>
+      </div>
+      <br />
+      <div>
+        <input type="submit" value="Book my Art Journey" />
+      </div>
+    </form>
+  </body>
+</html>
